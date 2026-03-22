@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Customer Segmentation Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+  <div class="nav-logo">Customer Segmentation</div>
+  <ul class="nav-links">
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#dataset">Dataset</a></li>
+    <li><a href="#segments">Segments</a></li>
+    <li><a href="#visuals">Visualizations</a></li>
+    <li><a href="#tools">Tools</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <h1>Customer Segmentation using Machine Learning</h1>
+  <p>
+    Data science project using RFM analysis and clustering algorithms to
+    identify customer groups for targeted marketing strategies.
+  </p>
+
+  <div class="hero-buttons">
+    <a href="#visuals" class="primary-btn">View Visualizations</a>
+    <a href="https://github.com/Mridini31/Customer-segmentation" class="secondary-btn" target="_blank">
+      GitHub Repository
+    </a>
+  </div>
+</section>
+
+
+
+
+<section id="overview">
+<h2>Project Overview</h2>
+
+<p>
+Customer segmentation is a machine learning technique used to divide customers into groups based on their purchasing behaviour.
+Businesses use this information to target marketing strategies more effectively and improve customer engagement.
+</p>
+
+</section>
+
+
+<section id="dataset">
+<h2>Dataset</h2>
+
+<p>
+The dataset contains customer information such as annual income and spending score.
+These features help identify patterns in customer purchasing behaviour.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>RFM Features</h2>
+
+<ul>
+<li><b>Recency</b> – How recently a customer made a purchase</li>
+<li><b>Frequency</b> – How often a customer makes purchases</li>
+<li><b>Monetary</b> – Total amount spent by the customer</li>
+</ul>
+
+</section>
+
+
+<section>
+
+<h2>Clustering Approach</h2>
+
+<p>
+K-Means clustering was applied to group customers into segments based on their similarity.
+Each cluster represents a group of customers with similar purchasing patterns.
+</p>
+
+</section>
+
+
+<section id="segments">
+<h2>Customer Segments</h2>
+
+<ul>
+<li>High value loyal customers</li>
+<li>Regular customers</li>
+<li>Occasional buyers</li>
+<li>Low engagement customers</li>
+</ul>
+
+</section>
+
+<section id="tools">
+<h2>Tools Used</h2>
+
+<ul>
+<li>Python</li>
+<li>Pandas</li>
+<li>Scikit-learn</li>
+<li>Matplotlib</li>
+<li>K-Means Clustering</li>
+</ul>
+
+</section>
+
+<section id="workflow">
+
+<h2>Project Workflow</h2>
+
+<div class="workflow-grid">
+
+<div class="workflow-card">
+<h3>1. Data Collection</h3>
+<p>
+The dataset was collected from Kaggle containing transactional
+records of an online retail store including invoice details,
+product information, customer ID and purchase quantity.
+</p>
+</div>
+
+<div class="workflow-card">
+<h3>2. Data Cleaning</h3>
+<p>
+Missing values were removed and invalid transactions were filtered.
+RFM (Recency, Frequency, Monetary) features were engineered to
+represent customer purchasing behaviour.
+</p>
+</div>
+
+<div class="workflow-card">
+<h3>3. Clustering Algorithms</h3>
+<p>
+Customer segmentation was performed using K-Means clustering.
+The optimal number of clusters was determined using the
+Elbow Method and hierarchical clustering analysis.
+</p>
+</div>
+
+<div class="workflow-card">
+<h3>4. Business Insights</h3>
+<p>
+The resulting customer groups allow businesses to identify
+high-value customers, occasional buyers and low engagement users
+to design targeted marketing campaigns.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="visuals">
+
+<h2>Data Visualizations</h2>
+
+<p>
+The following visualizations show exploratory data analysis and clustering
+results used to segment customers based on purchasing behaviour.
+</p>
+
+<div class="visual-grid">
+
+<div class="visual-card">
+<img src="images/clusters.png">
+<p>K-Means Customer Clusters</p>
+</div>
+
+<div class="visual-card">
+<img src="images/elbow.png">
+<p>Elbow Method for Optimal Clusters</p>
+</div>
+
+<div class="visual-card">
+<img src="images/dendrogram.png">
+<p>Hierarchical Clustering Dendrogram</p>
+</div>
+
+<div class="visual-card">
+<img src="images/purchase_distribution.png">
+<p>Distribution of Purchase Quantities</p>
+</div>
+
+<div class="visual-card">
+<img src="images/unit_price_distribution.png">
+<p>Distribution of Unit Prices</p>
+</div>
+
+<div class="visual-card">
+<img src="images/purchases_per_customer.png">
+<p>Number of Purchases per Customer</p>
+</div>
+
+<div class="visual-card">
+<img src="images/country_sales.png">
+<p>Country-wise Total Sales</p>
+</div>
+
+<div class="visual-card">
+<img src="images/top_products.png">
+<p>Top Selling Products</p>
+</div>
+
+<div class="visual-card">
+<img src="images/cluster_count.png">
+<p>Customers per Cluster</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="insights">
+
+<h2>Key Insights</h2>
+
+<div class="insights-grid">
+
+<div class="insight-card">
+<h3>Customer Behaviour</h3>
+<p>
+Most customers make small numbers of purchases,
+while a small group of loyal customers contributes
+a large portion of revenue.
+</p>
+</div>
+
+<div class="insight-card">
+<h3>Top Performing Country</h3>
+<p>
+The United Kingdom generates the majority of total
+sales, showing strong regional concentration.
+</p>
+</div>
+
+<div class="insight-card">
+<h3>Product Popularity</h3>
+<p>
+A small set of products dominate total sales,
+suggesting demand concentration on key items.
+</p>
+</div>
+
+<div class="insight-card">
+<h3>Customer Segments</h3>
+<p>
+K-Means clustering identified distinct groups such as
+loyal customers, regular buyers, and low engagement users.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="stats-section">
+
+<div class="stats-grid">
+
+<div class="stat-card">
+<h3>4000+</h3>
+<p>Customers Analyzed</p>
+</div>
+
+<div class="stat-card">
+<h3>3</h3>
+<p>RFM Features</p>
+</div>
+
+<div class="stat-card">
+<h3>4</h3>
+<p>Customer Segments</p>
+</div>
+
+<div class="stat-card">
+<h3>3</h3>
+<p>Clustering Algorithms</p>
+</div>
+
+</div>
+
+</section>
+<section id="skills">
+
+<h2>Technologies Used</h2>
+
+<ul class="skills-list">
+<li>Python</li>
+<li>Pandas</li>
+<li>Scikit-Learn</li>
+<li>Matplotlib</li>
+<li>Machine Learning</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>Data Visualization</li>
+</ul>
+
+</section>
+
+<section class="github-section">
+
+<h2>Project Source Code</h2>
+
+<p>
+You can explore the full implementation,
+data analysis and machine learning model on GitHub.
+</p>
+
+<a href="https://github.com/Mridini31/Customer-segmentation"
+class="primary-btn">
+View Project on GitHub
+</a>
+
+</section>
+
+<footer class="footer">
+<p>© 2026 Mridini Chaturvedi</p>
+
+<div class="footer-links">
+<a href="https://github.com/Mridini31">GitHub</a>
+<a href="https://www.linkedin.com/in/mridini-chaturvedi/">LinkedIn</a>
+<a href="mailto:chaturvedimridini@gmail.com">Email</a>
+</div>
+
+</footer>
+
+</body>
+
+</html>
